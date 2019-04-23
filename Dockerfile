@@ -5,8 +5,8 @@ ENV GOARCH=arm
 ENV GOARM=7
 # ENV CC=arm-linux-gnueabi-gcc
 
-ENV BEATS=filebeat,metricbeat
-ENV BEATS_VERSION=6.6.1
+ENV BEATS=filebeat,metricbeat,auditbeat,packetbeat
+ENV BEATS_VERSION=7.0.0
 
 COPY ./build.sh /build.sh
 RUN [ "mkdir", "-p", "/go" ]
